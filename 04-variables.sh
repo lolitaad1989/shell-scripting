@@ -8,6 +8,13 @@ a=10
 b=20
 c=30 
 d=100
-# JUNK_FOLDER_NAME=xyz
+
+
+# How to print the value of a variable 
 echo a 
-echo $a 
+
+# $a : telling system to print the value of a
+# $  : is a specia variable , when added as a prefix to any variable it considers to extract the value from the variable
+
+echo value of a is $a 
+echo value of a is ${a} 
