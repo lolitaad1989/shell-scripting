@@ -16,5 +16,8 @@ echo a
 # $a : telling system to print the value of a
 # $  : is a specia variable , when added as a prefix to any variable it considers to extract the value from the variable
 
-echo value of a is $a 
-echo value of a is ${a} 
+echo "Printing value of c : $c" 
+echo "Printing the value of d : $d"
+
+d=200
+echo "Printing the value of d : $d"
