@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bashc
 # a=$1
 # if  [ $a == ABC ] ; then
 #     echo "Both values are equal"
@@ -11,10 +11,10 @@
 
 c=$1
 
-if [ $c -eq '10' ] ; then
+if [ '$c' -eq '10' ] ; then
     echo "Value is 10"
-elif [ $c -eq '15'] ; then
+elif [ '$c' -eq '15'] ; then
     echo "Value is 15"
-else [ $c -eq '25'] ; then
+else [ '$c' -eq '25'] ; then
     echo "Value is 25"
 fi
