@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-echo -e "Todays date is $DATE"
+echo -e "Todays date is $date"
