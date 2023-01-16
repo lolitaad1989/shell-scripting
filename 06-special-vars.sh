@@ -6,5 +6,5 @@ b=$2
 #echo "Enter the value of a : $a "
 #echo "Enter the value of b : $b "
 
-echo "The value of a is $a"
-echo "The value of b is $b"
+echo -e "The value of a is $a"
+echo -e "The value of b is $b"
