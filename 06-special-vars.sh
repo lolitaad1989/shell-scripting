@@ -8,3 +8,5 @@ b=$2
 
 echo -e "The value of a is $a"
 echo -e "The value of b is $b"
+echo "Here are the variables used in the script :  $*"
+echo "Number of variables used in the script : $# "
