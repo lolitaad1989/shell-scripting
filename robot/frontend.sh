@@ -7,26 +7,26 @@ if [ $ID -ne 0 ] ; then
     exit 1
 fi 
 
-echo -n "Installing Nginx :"
+echo -n "Installing Nginx : "
 yum install nginx -y  &>> /tmp/frontend.log
 if [ $? -eq 0 ] ; then
-    echo -e "Success"
+    echo -e "\e[32m Success \e[0m"
 else 
-    echo -e "Failure"
-    fi
+    echo -e "\e[31m Failure \e[0m"
+fi
 
-echo -n "Enabling Nginx :"
+echo -n "Enabling Nginx : "
 systemctl enable nginx  &>> /tmp/frontend.log
 if [ $? -eq 0 ] ; then
     echo -e "Success"
 else 
     echo -e "Failure"
-    fi
+fi
 
-echo -n "Starting Nginx :"
+echo -n "Starting Nginx : "
 systemctl start nginx  &>> /tmp/frontend.log
 if [ $? -eq 0 ] ; then
     echo -e "Success"
 else 
     echo -e "Failure"
-    fi
+fi
