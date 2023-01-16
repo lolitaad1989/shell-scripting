@@ -1,6 +1,6 @@
 #!/bin/bash
 
-a="ABC"
+a=$1
 if  [ $a == ABC ] ; then
     echo "Both values are equal"
 else
