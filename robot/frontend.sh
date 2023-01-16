@@ -48,4 +48,4 @@ systemctl restart nginx  &>> $LOGFILE
 stat $?
 
 
-echo -e "\e[32m ______ $COMPONENT Configuration Completed _________ \e[0m
+echo -e "\e[32m ______ $COMPONENT Configuration Completed _________ \e[0m"
