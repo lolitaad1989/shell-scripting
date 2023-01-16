@@ -2,5 +2,5 @@
 
 a="ABC"
 if  [ $a == ABC ] 
-    echo "Both are equal"
+    echo "Both values are equal"
 fi 
