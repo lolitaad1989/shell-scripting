@@ -17,6 +17,6 @@ case $ACTION in
         ;;
     *)
         echo "Valid commands are start stop or restart only"
-        exit 0"
+        exit 0
         ;;
 esac
