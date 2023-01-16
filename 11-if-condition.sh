@@ -7,7 +7,7 @@
 #     echo "Both are not equal"
 #     exit 1
 # fi 
-# COMMENT 
+
 
 c=$1
 
