@@ -27,7 +27,7 @@ rm -rf * &>> /tmp/frontend.log
 stat $?
 
 echo -n "Extracting $COMPONET : "
-unzip /tmp/frontend.zip
+unzip /tmp/frontend.zip >> /tmp/frontend.log
 stat $?
 
 echo -n "Copying $COMPONET "
