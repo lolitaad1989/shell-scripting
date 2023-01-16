@@ -18,6 +18,7 @@ echo a
 
 echo "Printing value of c : $c" 
 echo "Printing the value of d : $d"
+echo "Printing the value of f : $f"
 
 d=200
 echo "Printing the value of d : $d"
