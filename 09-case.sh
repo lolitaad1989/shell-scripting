@@ -17,6 +17,6 @@ case $ACTION in
         ;;
     *)
         echo -e "\e[32m Valid commands are start stop or restart only \e[0m"
-        exit 1
+        exit 16
         ;;
 esac
