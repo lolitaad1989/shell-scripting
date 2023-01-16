@@ -7,6 +7,13 @@ done
 val=0
 
 while [ $val -lt "10"] ; do
-    echo "The value is $val"
-    val=$(($val+1))
+    echo "The value is $val "
+    i = $(($val+1))
+done
+
+
+val=0
+while [ $val -lt 10 ]; do
+  echo I = $val
+  i=$(($val+1))
 done
