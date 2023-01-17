@@ -4,16 +4,7 @@ set -e
 
 ID=$(id -u)
 COMPONENT=frontend
-LOGFILE=/tmp/$COMPONENT.log
-
- stat () {
-if [ $1 -eq 0 ] ; then
-    echo -e "\e[32m Success \e[0m"
-else 
-    echo -e "\e[31m Failure \e[0m"
-fi
- }
-
+source common.sh
 
 echo -e "\e[32m ______ $COMPONENT Configuration is Starting  _________ \e[0m"
 echo -n "Installing Nginx : "
