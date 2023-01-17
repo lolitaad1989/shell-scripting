@@ -6,7 +6,7 @@ ID=$(id -u)
 COMPONENT=mongodb
 LOGFILE=/tmp/$COMPONENT.log
 
- stat () {
+stat () {
 if [ $1 -eq 0 ] ; then
     echo -e "\e[32m Success \e[0m"
 else 
@@ -14,11 +14,6 @@ else
 fi
  }
 
-
-echo -e "\e[32m ______ $COMPONENT Configuration is Starting  _________ \e[0m"
-echo -n "Installing Nginx : "
-yum install nginx -y  &>> $LOGFILE
-stat $?
 
 
 echo -n "Downloading the $COMPONENT : "
