@@ -7,11 +7,11 @@ COMPONENT=catalogue
 source robot/common.sh
 
 echo -n "Congiguring Nodejs repo : "
-curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash -
+curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash - &>> $LOGFILE
 yum install nodejs -y  &>> $LOGFILE
 stat $?
 
 
 echo -n "Creating Application user $APPUSER"
-useradd roboshop
+useradd roboshop &>> $LOGFILE
 stat $?
