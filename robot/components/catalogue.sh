@@ -5,6 +5,8 @@ set -e
 COMPONENT=catalogue
 source components/common.sh
 
+echo -e "\e[32m ______ $COMPONENT Configuration Started _________ \e[0m"
+
 echo -n "Congiguring Nodejs repo : "
 curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash - &>> "${LOGFILE}"
 yum install nodejs -y  &>> "${LOGFILE}"
@@ -52,6 +54,8 @@ stat $?
 
 echo -n "Starting  the  $COMPONENT services :"
 systemctl daemon-reload  &>> "${LOGFILE}"
-systemctl restart catalogue  &>> "${LOGFILE}"
-systemctl enable catalogue  &>> "${LOGFILE}"
+systemctl restart $COMPONENT  &>> "${LOGFILE}"
+systemctl enable $COMPONENT  &>> "${LOGFILE}"
 stat $?
+
+echo -e "\e[32m ______ $COMPONENT Configuration Completed _________ \e[0m"
