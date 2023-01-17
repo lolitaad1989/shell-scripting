@@ -4,7 +4,7 @@ set -e
 
 ID=$(id -u)
 COMPONENT=frontend
-source common.sh
+source robot/common.sh
 
 echo -e "\e[32m ______ $COMPONENT Configuration is Starting  _________ \e[0m"
 echo -n "Installing Nginx : "

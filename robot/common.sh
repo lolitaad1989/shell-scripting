@@ -1,5 +1,6 @@
 #!/bin/bash
 
+APPUSER=roboshop
 LOFGILE="/tmp/$COMPONENT.log"
 
 ID=$(id -u)

@@ -4,7 +4,7 @@ set -e
 
 ID=$(id -u)
 COMPONENT=mongodb
-source common.sh 
+source robot/common.sh
 
 
 echo -n "Downloading the $COMPONENT : "
