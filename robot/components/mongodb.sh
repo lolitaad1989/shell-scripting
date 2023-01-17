@@ -2,7 +2,6 @@
 
 set -e 
 
-ID=$(id -u)
 COMPONENT=mongodb
 source components/common.sh
 
