@@ -35,3 +35,8 @@ chown -R $APPUSER:$APPUSER /home/$APPUSER/$COMPONENT
 # cd /home/roboshop/$COMPONENT
 # npm install
 stat $?
+
+echo -n "Installing $COMPONENT dependencies :"
+cd $COMPONENT
+npm install &>> "${LOGFILE}"
+stat $?
