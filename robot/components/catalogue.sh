@@ -4,7 +4,7 @@ set -e
 
 ID=$(id -u)
 COMPONENT=catalogue
-source robot/common.sh
+source components/common.sh
 
 echo -n "Congiguring Nodejs repo : "
 curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash - &>> $LOGFILE
