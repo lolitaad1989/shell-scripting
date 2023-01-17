@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -e 
 
 ID=$(id -u)
 COMPONENT=frontend
@@ -18,24 +17,24 @@ stat $?
 
 echo -n "Clearing the default content : "
 cd /usr/share/nginx/html
-rm -rf * &>> $LOGFILE
+rm -rf * &>> "${LOGFILE}"
 stat $?
 
 echo -n "Extracting $COMPONET : "
-unzip /tmp/$COMPONENT.zip >> $LOGFILE
+unzip /tmp/$COMPONENT.zip >> "${LOGFILE}"
 stat $?
 
 echo -n "Copying $COMPONET "
-mv $COMPONENT-main/* .  &>> $LOGFILE
-mv static/* .   &>> $LOGFILE
-rm -rf $COMPONENT-main README.md   &>> $LOGFILE
-mv localhost.conf /etc/nginx/default.d/roboshop.conf  &>> $LOGFILE
+mv $COMPONENT-main/* .  &>> "${LOGFILE}"
+mv static/* .   &>> "${LOGFILE}"
+rm -rf $COMPONENT-main README.md   &>> "${LOGFILE}"
+mv localhost.conf /etc/nginx/default.d/roboshop.conf  &>> "${LOGFILE}"
 stat $?
 
 
 echo -n "Restarting Nginx : "
-systemctl enable nginx  &>> $LOGFILE
-systemctl restart nginx  &>> $LOGFILE
+systemctl enable nginx  &>> "${LOGFILE}"
+systemctl restart nginx  &>> "${LOGFILE}"
 stat $?
 
 
