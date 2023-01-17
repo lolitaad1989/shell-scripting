@@ -18,11 +18,11 @@ stat $?
 
 echo -n "Clearing the default content : "
 cd /usr/share/nginx/html
-rm -rf * &>> "${LOGFILE}"
+rm -rf *    &>> "${LOGFILE}"
 stat $?
 
 echo -n "Extracting $COMPONET : "
-unzip /tmp/$COMPONENT.zip >> "${LOGFILE}"
+unzip /tmp/$COMPONENT.zip   >> "${LOGFILE}"
 stat $?
 
 echo -n "Copying $COMPONET "
