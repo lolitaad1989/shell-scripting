@@ -18,7 +18,7 @@ stat $?
 
 echo -n "Clearing the default content : "
 cd /usr/share/nginx/html
-rm -rf *    &>> "${LOGFILE}"
+rm -rf *    &>> "${LOFGILE}"
 stat $?
 
 echo -n "Extracting $COMPONET : "
