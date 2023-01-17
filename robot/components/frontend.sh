@@ -8,7 +8,7 @@ source components/common.sh
 echo -e "\e[32m ______ $COMPONENT Configuration is Starting  _________ \e[0m"
 echo -n "Installing Nginx : "
 #yum install nginx -y  &>> "${LOGFILE}"
-yum install nginx -y     &>> "${LOFGILE}"
+yum install nginx -y     &>> "${LOGFILE}"
 stat $?
 
 
@@ -18,11 +18,11 @@ stat $?
 
 echo -n "Clearing the default content : "
 cd /usr/share/nginx/html
-rm -rf *    &>> "${LOFGILE}"
+rm -rf *    &>> "${LOGFILE}"
 stat $?
 
 echo -n "Extracting $COMPONET : "
-unzip /tmp/$COMPONENT.zip   >> "${LOGFILE}"
+unzip -o /tmp/$COMPONENT.zip  &>> "${LOGFILE}"
 stat $?
 
 echo -n "Copying $COMPONET "
