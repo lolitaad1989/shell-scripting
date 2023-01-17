@@ -9,3 +9,6 @@ mongodb:
 
 redis:
 	bash components/redis.sh
+
+user:
+	bash components/user.sh	
