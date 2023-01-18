@@ -1,3 +1,6 @@
-#!/bin/bash
+#!/bin/bash 
 
-echo I am payment
+COMPONENT=payment 
+source components/common.sh    # Source loads a file and this file has all the common patterns.
+
+PYTHON                         # Calling NodeJS Function
